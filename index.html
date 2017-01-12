@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>La posta bar</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+
+    <body>
+        
+      <!-- Nav bar --> 
+      
+      <nav class="black" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="" class="brand-logo"></a>
+        <ul class="center hide-on-med-and-down">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Reservas</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Reservas</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+      </nav>
+      <!-- Nav bar END --> 
+
+      <!-- Container -->
+  <div id="index-banner" class="parallax-container">
+    
+    <div class="parallax"><img src="header2.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+      <!-- Container End -->
+
+
+  <div class="black">
+    <div class="container">
+        <div class="section">
+        <div class="row">
+
+          <div class="col s12  l5">
+           <img class="responsive-img left" src="about_us.jpg" >
+          </div>
+          
+          <div id="nosotros" class="col s12 l6">
+          <br>
+                <hr>
+                <p class="white-text light no-pad-bot">EL SITIO PARA VER Y DEJARSE VER EN SANTO DOMINGO DONDE PODRÁS DISFRUTAR DE NUESTROS EMBLEMÁTICOS CÓCTELES Y DE LAS MEJORES BEBIDAS LOCALES E INTERNACIONALES EN UN AMBIENTE MODERNO Y TOTALMENTE ABIERTO CON LA MEJOR MÚSICA DEL MOMENTO.</p>
+                <hr>
+              </div>
+              
+
+        </div>
+    
+         </div>
+    </div>
+     
+    </div>
+  </div>
+
+  <!-- MENU -->
+    <div class="amber lighten-5">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="light">Menú</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- MENU END -->
+
+
+
+ 
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+
+        <script type="text/javascript">
+        $( document ).ready(function(){
+          $('.parallax').parallax();
+          $('.carousel.carousel-slider').carousel({full_width: true});
+          $(".button-collapse").sideNav();
+          $('.scrollspy').scrollSpy();
+          
+        })
+      </script>
+    </body>
+  </html>
