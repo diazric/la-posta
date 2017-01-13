@@ -5,6 +5,15 @@
  *
  * Made By MaterializeCSS.com
  */
+ 
+ h5 { 
+ font-size: 1.3em; }
+ table.highlight > tbody > tr:hover {
+  background-color: #ffe082;
+}
+span {
+  font-style: italic;
+}
 
 .nosotros {
   height: auto;
@@ -13,9 +22,7 @@ nav ul a,
 nav .brand-logo {
   color: white;
 }
-h1 {
-  color: grey;
-}
+
 p {
   line-height: 2rem;
 }
