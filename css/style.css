@@ -5,7 +5,25 @@
  *
  * Made By MaterializeCSS.com
  */
- 
+ .menu {
+  opacity: 0;
+ }
+ .loco {
+  opacity: 0;
+ }
+
+ .loco2 {
+  opacity: 0;
+ }
+ .loco3 {
+  opacity: 0;
+ }
+ .loco4 {
+  opacity: 0;
+ }
+ .loco5{
+  opacity: 0;
+ }
  h5 { 
  font-size: 1.3em; }
  table.highlight > tbody > tr:hover {
