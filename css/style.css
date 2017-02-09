@@ -5,27 +5,67 @@
  *
  * Made By MaterializeCSS.com
  */
- .menu {
-  opacity: 0;
- }
- .loco {
-  opacity: 0;
- }
 
- .loco2 {
+
+ a {
+  text-decoration-color: none;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 75%;
+  }
+}
+
+
+
+/*    -------    */
+
+
+.fondoMenu {
+  background-image: url("../images/fondoMenu.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.menu {
   opacity: 0;
- }
- .loco3 {
+}
+.loco {
   opacity: 0;
- }
- .loco4 {
+}
+
+.loco2 {
   opacity: 0;
- }
- .loco5{
+}
+.loco3 {
   opacity: 0;
- }
- h5 { 
+}
+.loco4 {
+  opacity: 0;
+}
+.loco5{
+  opacity: 0;
+}
+.loco6{
+  opacity: 0;
+}
+h5 { 
  font-size: 1.3em; }
+
  table.highlight > tbody > tr:hover {
   background-color: #ffe082;
 }
@@ -55,9 +95,9 @@ p {
   height: 50em;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
