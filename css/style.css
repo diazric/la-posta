@@ -69,9 +69,6 @@ h5 {
  table.highlight > tbody > tr:hover {
   background-color: #ffe082;
 }
-span {
-  font-style: italic;
-}
 
 .nosotros {
   height: auto;
