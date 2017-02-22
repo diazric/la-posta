@@ -10,7 +10,7 @@
 }
 @font-face{
   font-family: 'gothamno';
-  src: url('../fonts/Gotham-Book.otf');
+  src: url('./fonts/Gotham-Book.otf');
   font-weight: normal;
 }
 
