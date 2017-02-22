@@ -5,6 +5,14 @@
  *
  * Made By MaterializeCSS.com
  */
+*{
+  font-family: 'gothamno';
+}
+@font-face{
+  font-family: 'gothamno';
+  src: url('../fonts/Gotham-Book.otf');
+  font-weight: normal;
+}
 
 
  a {
@@ -35,11 +43,11 @@
 /*    -------    */
 
 
-.fondoMenu {
+/* .fondoMenu {
   background-image: url("../images/fondoMenu.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+}*/
 
 .menu {
   opacity: 0;
