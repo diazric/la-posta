@@ -1,8 +1,9 @@
-  <?php 
+ <?php 
      
      function sendEmail(){
-      if(!empty($_POST)){
-        mail('diazric@gmail.com', $_POST['email'], $_POST['message'] . $_POST['name']);
+      if(!empty($_POST)){ 
+        mail('diazric@gmail.com', 'Resercaci&oacuten La Posta Bar', 'email:' ."\t". $_POST['email'] ."\r\n", 
+        'Enviado por:' . "\t" . $_POST['name'] . "\r\n" . 'Mensaje:'. "\t". $_POST['message']);
       }
     }
    ?>
@@ -91,11 +92,11 @@
        <section>
           <div class="row center">
           <div class="col s12 m12 l12">
-            <h3 class="black-text amber lighten-5 center z-depth-4" style="padding-top: 11px; padding-bottom: 11px;">M&uacutesica en vivo</h3>
+            <h3 class="white-text black center z-depth-4" style="padding-top: 11px; padding-bottom: 11px; opacity: 0.8">M&uacutesica en vivo</h3>
           </div>
           
-          <div class="col s12 m12 l6 black-text">
-            <div class="card-panel amber lighten-5 z-depth-4">
+          <div class="col s12 m12 l6 white-text" style="opacity: 0.8;">
+            <div class="card-panel black z-depth-4">
               <div class="row">
                 <div><h3 class="light">DOMINGOS</h3></div>
                 <div><h5>Edward Cruz</h5>
@@ -105,8 +106,8 @@
             </div>
           </div>
 
-          <div class="col s12 m12 l6 black-text">
-            <div class="card-panel amber lighten-5 z-depth-4">
+          <div class="col s12 m12 l6 white-text" style="opacity: 0.8;">
+            <div class="card-panel black z-depth-4">
               <div class="row">
                 <div><h3 class="light">LUNES</h3></div>
                 <div><h5>Edward Cruz</h5>
@@ -422,7 +423,7 @@
   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <div class="amber lighten-5 section">
     <div class="container">
-    <h2>Contactos</h2>
+    <h2>RESERVACI&OacuteN</h2>
     <div class="col s12 m12 l12">
       
       <div class="row">
@@ -436,13 +437,16 @@
         </div>
       </div>
       <div class="row">
-      <div class="input-field col s6">
+      <div class="input-field col s12">
         <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
         <label for="textarea1">Mensaje</label>
       </div>
       <div class="input-field col s6">
-        <input class="btn waves-effect waves-light" type="submit" name="action" onclick="<?php sendEmail();?>">
-    </button>
+      <button class="btn black white-text waves-effect waves-light">
+        <input type="submit" value="Enviar" onclick="<?php sendEmail();?>">
+      </button>
+        
+       
       </div>
         
       </div>
@@ -456,28 +460,28 @@
 
   <!-- FOOOTER -->
 
-  <footer id="reservas" class="page-footer black">
-    <div class="container" id="contacto">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text light" itemscope itemtype ="http://schema.org/Organization">CONTACTO</h5>
-          <p class="grey-text text-lighten-4 light" itemprop="address">Gustavo Mej&iacutea Ricart #122 Esq. Manuel de Jes&uacutes Troncoso Ens. Piantini. <br>C. <a href="mailto:reservas@lapostabar.com?Subject=Reservas%20La%20Posta" itemprop="email"  target="_top">Contacto</a><br> <span itemprop="telephone">T. 809 475 1007</span></p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text light">REDES SOCIALES</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3 light" href="https://www.facebook.com/La-Posta-Bar-483396758417640/" target="_blank">Facebook</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="https://www.instagram.com/lapostabar/?hl=en" target="_blank">Instagram</a></li>
-          </ul>
+    <footer id="reservas" class="page-footer black">
+      <div class="container" id="contacto">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text light" itemscope itemtype ="http://schema.org/Organization">CONTACTOS</h5>
+            <p class="grey-text text-lighten-4 light" itemprop="address">Gustavo Mej&iacutea Ricart #122 Esq. Manuel de Jes&uacutes Troncoso Ens. Piantini. <br>C. <a href="mailto:reservas@lapostabar.com?Subject=Reservas%20La%20Posta" itemprop="email"  target="_top">Reservaci&oacuten</a><br> <span itemprop="telephone">T. 809 475 1007</span></p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text light">REDES SOCIALES</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3 light" href="https://www.facebook.com/La-Posta-Bar-483396758417640/" target="_blank">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3 light" href="https://www.instagram.com/lapostabar/?hl=en" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-copyright black">
-      <div class="container center light">
-        <span style="font-size: .8em;">© 2017 THE FOODHALL - LA POSTA BAR | Design by <a href="https://www.ricardodiazm.net">Ricardo Diaz</a></span>
+      <div class="footer-copyright black">
+        <div class="container center light">
+          <span style="font-size: .8em;">© 2017 THE FOODHALL - LA POSTA BAR | Design by <a href="https://www.ricardodiazm.net">Ricardo Diaz</a></span>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <!--footer end -->
 
