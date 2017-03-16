@@ -58,11 +58,11 @@
     <!-- Nav bar END --> 
 
     <!-- Container -->
-    <div id="index-banner" class="parallax-container">
-      <div class="parallax-container">
-        <div class="parallax"><img src="header2.jpg" alt="Unsplashed background img 1"></div>
+      <div id="index-banner" class="parallax-container">
+        <div class="parallax-container">
+          <div class="parallax"><img src="header2.jpg" alt="Unsplashed background img 1"></div>
+        </div>
       </div>
-    </div>
     <!-- Container End -->
 
 
