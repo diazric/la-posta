@@ -13,7 +13,7 @@
     <title>La Posta Bar</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="shortcut icon" href="./images/favi.png">
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
@@ -66,18 +66,18 @@
     <!-- Container End -->
 
 
-    <div class="black" itemscope itemtype ="https://schema.org/LocalBusiness">
+    <div class="black nosotrosM" itemscope itemtype ="https://schema.org/LocalBusiness">
       <div class="container">
-        <div class="section">
+        <div class="section pTop">
           <div class="row menu">
             <div class="col s12 m6 l6">
              <img class="responsive-img left" src="about.jpg" >
            </div>
 
-           <div id="nosotros" class="col s12 m6 l6">
+           <div id="nosotros" class="col s12 m6 l6 scrollspy">
             <br>
             <hr>
-            <p class="white-text light no-pad-bot"><span itemprop="name">LA POSTA BAR</span> EL SITIO PARA VER Y DEJARSE VER EN SANTO DOMINGO DONDE PODRÁS DISFRUTAR DE NUESTROS EMBLEMÁTICOS CÓCTELES Y DE LAS MEJORES BEBIDAS LOCALES E INTERNACIONALES EN UN AMBIENTE MODERNO Y TOTALMENTE ABIERTO CON LA MEJOR MÚSICA DEL MOMENTO.</p>
+            <p class="white-text light no-pad-bot"><span itemprop="name">LA POSTA BAR</span> ES EL SITIO PARA VER Y DEJARSE VER EN SANTO DOMINGO DONDE PODRÁS DISFRUTAR DE NUESTROS EMBLEMÁTICOS CÓCTELES Y DE LAS MEJORES BEBIDAS LOCALES E INTERNACIONALES EN UN AMBIENTE MODERNO Y TOTALMENTE ABIERTO CON LA MEJOR MÚSICA DEL MOMENTO.</p>
             <hr><br>
             <a class="waves-effect waves-yellow btn-large white black-text" href="#contacto">Contacto</a>
           </div>
@@ -87,40 +87,6 @@
   </div>
   <!-- Act -->
   <div class="parallax-container valign-wrapper ">
-   
-      <div class="container">
-       <section>
-          <div class="row center">
-          <div class="col s12 m12 l12">
-            <h3 class="white-text black center z-depth-4" style="padding-top: 11px; padding-bottom: 11px; opacity: 0.8">M&uacutesica en vivo</h3>
-          </div>
-          
-          <div class="col s12 m12 l6 white-text" style="opacity: 0.8;">
-            <div class="card-panel black z-depth-4">
-              <div class="row">
-                <div><h3 class="light">DOMINGOS</h3></div>
-                <div><h5>Edward Cruz</h5>
-                  <p>A partir de las 8:30 p.m. (BANDA)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m12 l6 white-text" style="opacity: 0.8;">
-            <div class="card-panel black z-depth-4">
-              <div class="row">
-                <div><h3 class="light">LUNES</h3></div>
-                <div><h5>Edward Cruz</h5>
-                  <p>A partir de las 8:30 p.m. (SOLO)</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-       </section>
-      </div>
-
     <div class="parallax">
       <img src="./images/outside.jpg" alt="Unsplashed background img 3">
     </div>
@@ -137,7 +103,7 @@
     <div class="z-depth-2 white-text black">
       <div class="container loco">
         <div class="row">
-          <div id="menu" class="col s12 m12 l12">
+          <div id="menu" class="col s12 m12 l12 scrollspy">
             <h1 class="light center"><span itemprop="menu">Menú</span></h1>
             <span><hr></span>
             <h3 class="light">FINGER FOOD</h3>
@@ -240,6 +206,15 @@
 
    <!-- TO SHARE END-->
 
+
+  <div class="row">
+    <section>
+      <div class="col s12 m12 l12 pad-col">
+          <img class="responsive-img red" width="100%" src="images/edward.png">
+      </div>
+    </section>
+  
+</div>
 
    <!-- PIZZA -->
 
@@ -362,7 +337,7 @@
   <!-- GALLERY -->
 
 
-  <div class="black section" id="galeria">
+  <div class="black section scrollspy" id="galeria">
     <div class="row container loco6 ">
 
       <div class="col s12 m4 l4">
@@ -381,7 +356,7 @@
           <div class="card-image waves-effect">
             <img class="responsive-img" src="./images/Sauces.jpg">
             <div class="card-content amber lighten-5">
-              <p>Salchichas</p>
+              <p>Salchichas Mixtas</p>
             </div>
           </div>
         </div>
@@ -403,7 +378,7 @@
           <div class="card-image waves-effect">
             <img class="responsive-img" src="./images/drink1.jpg">
           <div class="card-content amber lighten-5">
-            <p>Trago 1</p>
+            <p>Skinny Margarita</p>
           </div>
           </div>
         </div>
@@ -414,7 +389,7 @@
           <div class="card-image waves-effect">
             <img class="responsive-img" src="./images/drink2.jpg">
           <div class="card-content amber lighten-5">
-            <p>Trago 2</p>
+            <p>Strawberry Daiquiri</p>
           </div>
           </div>
         </div>
@@ -423,10 +398,10 @@
       <div class="col s12 m4 l4">
         <div class="card no-padding">
           <div class="card-image waves-effect">
-            <img class="responsive-img" src="./images/test.jpg">
+            <img class="responsive-img" src="./images/IMG_3698.JPG">
           
           <div class="card-content amber lighten-5">
-            <p>test</p>
+            <p>Martini Rosso</p>
           </div>
           </div>
         </div>
@@ -438,7 +413,7 @@
 
   <!-- GALLERY END -->
   <!--FORM -->
-  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?/" method="post">
         <div class="amber lighten-5 section">
     <div class="container">
     <h2>RESERVACI&OacuteN</h2>
@@ -479,7 +454,7 @@
   <!-- FOOOTER -->
 
     <footer id="reservas" class="page-footer black">
-      <div class="container" id="contacto">
+      <div class="container scrollspy" id="contacto">
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text light" itemscope itemtype ="http://schema.org/Organization">CONTACTOS</h5>
@@ -488,8 +463,8 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text light">REDES SOCIALES</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3 light" href="https://www.facebook.com/La-Posta-Bar-483396758417640/" target="_blank">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3 light" href="https://www.instagram.com/lapostabar/?hl=en" target="_blank">Instagram</a></li>
+              <li><img class="responsive-img s-svg prefix" src="./images/facebook.svg"><a class="grey-text text-lighten-3 light" href="https://www.facebook.com/La-Posta-Bar-483396758417640/" target="_blank"> Facebook</a></li>
+              <li><img class="responsive-img s-svg" src="./images/instagram.svg"><a class="grey-text text-lighten-3 light" href="https://www.instagram.com/lapostabar/?hl=en" target="_blank"> Instagram</a></li>
             </ul>
           </div>
         </div>

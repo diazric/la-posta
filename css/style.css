@@ -5,14 +5,41 @@
  *
  * Made By MaterializeCSS.com
  */
+
+.nosotrosM{
+  padding: 8rem 0;
+}
+
+.pTop{
+  padding-top: 2rem;
+}
+
 *{
   font-family: 'gothamno';
 }
+
+.s-svg{
+  width: 25px;
+}
+
 @font-face{
   font-family: 'gothamno';
   src: url('../fonts/Gotham-Book.otf');
   font-weight: normal;
 }
+
+@font-face{
+  font-family: 'gothamno';
+  src: url('../fonts/Gotham-Black.otf');
+  font-weight: bold;
+}
+ h5 {
+  font-weight: bold;
+
+ }
+ h3{
+  font-weight: bold;
+ }
 
 
  a {
