@@ -1,12 +1,10 @@
- <?php 
-     
-     function sendEmail(){
-      if(!empty($_POST)){ 
-        mail('diazric@gmail.com', 'Reservacion La Posta Bar', 'email:' ."\t". $_POST['email'] ."\r\n", 
-        'Enviado por:' . "\t" . $_POST['name'] . "\r\n" . 'Mensaje:'. "\t". $_POST['message']);
-      }
-    }
-   ?>
+<?php 
+function sendEmail(){ 
+      if(!empty($_POST)){  
+        mail('diazric@gmail.com', 'Reservacion La Posta Bar', 'email:' ."\t". $_POST['email'] ."\r\n",  
+        'Enviado por:' . "\t" . $_POST['name'] . "\r\n" . 'Mensaje:'. "\t". $_POST['message']); 
+
+?>
   <!DOCTYPE html>
   <html>
   <head>
@@ -146,7 +144,7 @@
          </div>
           <div class="col s12 m6 l6 light">
            <h5>"POLPETE" ALBONDIGAS ITALIANAS</h5>
-           <span>Tomate Aglio e olio / Gratinado con Grana Padano</span>
+           <span>Tomate Aglio e Olio / Gratinado con Grana Padano</span>
          </div>
           <div class="col s12 m6 l6 light">
            <h5>SART&EacuteN DE GAMBAS</h5>
@@ -437,9 +435,10 @@
       <button class="btn black white-text waves-effect waves-light">
         <input type="submit" value="Enviar" onclick="<?php sendEmail();?>">
       </button>
-        
-       
       </div>
+      <div class="input-field col s6">
+              <div class="g-recaptcha" data-sitekey="6LcBPRwUAAAAANTlYpUltVlXUswKNDqxCNX72xb9"></div>
+            </div>
         
       </div>
     </div>
