@@ -6,6 +6,13 @@
  * Made By MaterializeCSS.com
  */
 
+ .flotante {
+    display:scroll;
+        position:fixed;
+        bottom:120px;
+        right:50px;
+}
+
 .nosotrosM{
   padding: 8rem 0;
 }
