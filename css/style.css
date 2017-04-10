@@ -29,6 +29,18 @@
   width: 25px;
 }
 
+.s-svg2{
+  width: 50px;
+  z-index: 2;
+  
+}
+
+.s-svg2:hover {
+ 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+
 @font-face{
   font-family: 'gothamno';
   src: url('../fonts/Gotham-Book.otf');
